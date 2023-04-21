@@ -1,5 +1,6 @@
 import { FC } from 'react'
 import { useAccount, useBalance } from 'wagmi'
+import ThemeSwitcher from './ThemeSwitcher'
 
 const Dashboard: FC = () => {
   const { address } = useAccount()
@@ -19,13 +20,9 @@ const Dashboard: FC = () => {
           <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-gray-100">Balance</h3>
           <p className="text-gray-500 dark:text-gray-400">{balance} ETH</p>
         </div>
-      </div>
-
-      {/* Buttons to toggle dark mode */}
-      <div className="mt-4 flex space-x-4">
-        <button onClick={() => setLightMode()} className="bg-blue-500 text-white rounded px-4 py-2">Light Mode</button>
-        <button onClick={() => setDarkMode()} className="bg-blue-500 text-white rounded px-4 py-2">Dark Mode</button>
-        <button onClick={() => respectOSPreference()} className="bg-blue-500 text-white rounded px-4 py-2">Auto (OS Preference)</button>
+              {/* Add the ThemeSwitcher component */}
+      <div className="mt-4">
+        <ThemeSwitcher />
       </div>
     </div>
   )
