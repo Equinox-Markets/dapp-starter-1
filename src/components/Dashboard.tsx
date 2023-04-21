@@ -99,6 +99,7 @@ const Dashboard: FC = () => {
         </ol>
       </div>
     </div>
+  </div>
   )
 }
 
