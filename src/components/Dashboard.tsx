@@ -1,6 +1,6 @@
+// src/components/Dashboard.tsx
 import { FC } from 'react'
 import { useAccount, useBalance } from 'wagmi'
-import ThemeSwitcher from './ThemeSwitcher'
 import Image from 'next/image'
 
 const Dashboard: FC = () => {
@@ -10,29 +10,27 @@ const Dashboard: FC = () => {
   const balance = balanceData?.formatted || '0'
 
   return (
-
-        {/* NFT Section */}
-        <div className="mt-12 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-        <div className="container mx-auto p-6">
-        <div className="shadow-md rounded-lg p-6 mt-6">
-          <div className="relative">
-            <Image src="public/images/robot.png" alt="Fantom Treasures NFT" width={500} height={500} className="rounded-lg shadow-lg" />
-          </div>
-          <div>
-            <h2 className="text-3xl font-semibold text-gray-900 dark:text-gray-100">Fantom Treasures</h2>
-            <p className="mt-4 text-gray-700 dark:text-gray-300">
-              They will depict characters as futuristic treasure hunters, seeking out valuable digital assets in a high-tech world.
-            </p>
-          </div>
+    <div className="bg-white dark:bg-gray-800 shadow-md rounded-lg p-6 mt-6">
+      {/* NFT Showcase */}
+      <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12">
+        <div className="w-1/2 max-w-xs">
+          <Image src="/nft-image.png" alt="NFT Image" width={250} height={250} />
         </div>
-
-        {/* Earn real profit section */}
-        <div className="mt-12">
-        <div className="container mx-auto p-6">
-        <div className="shadow-md rounded-lg p-6 mt-6">
-          <h2 className="text-3xl font-semibold text-gray-900 dark:text-gray-100">Earn real profit with Fantom Treasures</h2>
-          <p className="mt-4 text-gray-700 dark:text-gray-300">Earn $WFTM from the platform&apos;s treasury with your NFT</p>
+        <div className="text-center md:text-left">
+          <h2 className="text-2xl font-semibold mb-4 text-gray-900 dark:text-gray-100">Fantom Treasures</h2>
+          <p className="text-gray-500 dark:text-gray-400">
+            Fantom Treasures depict characters as futuristic treasure hunters, seeking out valuable digital assets in a high-tech world.
+          </p>
         </div>
+      </div>
+
+      {/* Earn Profit */}
+      <div className="bg-white dark:bg-gray-700 shadow-md rounded-lg p-6 mt-6">
+        <h2 className="text-2xl font-semibold mb-4 text-gray-900 dark:text-gray-100">Earn real profit with Fantom Treasures</h2>
+        <p className="text-gray-500 dark:text-gray-400">
+          Earn $WFTM from the platform's treasury with your NFT
+        </p>
+      </div>
 
         {/* Stats section */}
         <div className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-8">
