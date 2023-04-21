@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-black py-4">
+    <footer className="bg-white dark:bg-gray-700 py-4 mt-6">
       <div className="flex justify-center items-center rounded-full bg-white mx-auto w-16 h-16 mb-4">
         <img src="/images/robot.png" alt="Logo" className="h-8" />
       </div>
@@ -35,4 +35,5 @@ const Footer = () => {
 };
 
 export default Footer;
+
 
