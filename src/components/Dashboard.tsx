@@ -47,7 +47,7 @@ const Dashboard: FC = () => {
         {/* Earn real profit section */}
         <div className="mt-12">
           <h2 className="text-3xl font-semibold text-gray-900 dark:text-gray-100">Earn real profit with Fantom Treasures</h2>
-          <p className="mt-4 text-gray-700 dark:text-gray-300">Earn $WFTM from the platform's treasury with your NFT</p>
+          <p className="mt-4 text-gray-700 dark:text-gray-300">Earn $WFTM from the platform&apos;s treasury with your NFT</p>
         </div>
 
         {/* Stats section */}
