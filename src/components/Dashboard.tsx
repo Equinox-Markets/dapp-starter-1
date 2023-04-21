@@ -5,6 +5,7 @@ import Image from 'next/image'
 import { useAccount, useBalance } from 'wagmi'
 import { APP_NAME } from '@/lib/consts'
 import ConnectWallet from '@/components/ConnectWallet'
+import ThemeSwitcher from '@/components/ThemeSwitcher'
 
 const Dashboard: FC = () => {
   const { address } = useAccount()
