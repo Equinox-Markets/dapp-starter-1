@@ -14,7 +14,7 @@ const Dashboard: FC = () => {
       {/* NFT Showcase */}
       <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12">
         <div className="w-1/2 max-w-xs">
-          <Image src="/robot.png" alt="NFT Image" width={250} height={250} />
+          <Image src="public/images/robot.png" alt="NFT Image" width={250} height={250} />
         </div>
         <div className="text-center md:text-left">
           <h2 className="text-2xl font-semibold mb-4 text-gray-900 dark:text-gray-100">Fantom Treasures</h2>
