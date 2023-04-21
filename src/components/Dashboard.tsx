@@ -14,7 +14,7 @@ const Dashboard: FC = () => {
       {/* NFT Showcase */}
       <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12">
         <div className="w-1/2 max-w-xs">
-          <Image src="/nft-image.png" alt="NFT Image" width={250} height={250} />
+          <Image src="/robot.png" alt="NFT Image" width={250} height={250} />
         </div>
         <div className="text-center md:text-left">
           <h2 className="text-2xl font-semibold mb-4 text-gray-900 dark:text-gray-100">Fantom Treasures</h2>
@@ -32,64 +32,77 @@ const Dashboard: FC = () => {
         </p>
       </div>
 
-        {/* Stats section */}
-        <div className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-8">
-        <div className="container mx-auto p-6">
-        <div className="shadow-md rounded-lg p-6 mt-6">
-          <div className="p-6 border-2 border-gray-200 dark:border-gray-700 rounded-lg">
-            <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-gray-100">Staked NFTs</h3>
-            <p className="text-gray-500 dark:text-gray-400">1234</p>
+      {/* Staked NFTs, Current Epoch, and Total Distributed $WFTM */}
+      <div className="bg-white dark:bg-gray-700 shadow-md rounded-lg p-6 mt-6">
+        <h2 className="text-2xl font-semibold mb-4 text-gray-900 dark:text-gray-100">Staking Info</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <div className="text-center">
+            <p className="text-xl font-semibold text-gray-900 dark:text-gray-100">Staked NFTs</p>
+            <p className="text-gray-500 dark:text-gray-400">1,234</p>
           </div>
-          <div className="p-6 border-2 border-gray-200 dark:border-gray-700 rounded-lg">
-           <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-gray-100">Current Epoch</h3>
-           <p className="text-gray-500 dark:text-gray-400">456</p>
+          <div className="text-center">
+            <p className="text-xl font-semibold text-gray-900 dark:text-gray-100">Current Epoch</p>
+            <p className="text-gray-500 dark:text-gray-400">7</p>
           </div>
-          <div className="p-6 border-2 border-gray-200 dark:border-gray-700 rounded-lg">
-           <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-gray-100">Total Distributed $WFTM</h3>
-           <p className="text-gray-500 dark:text-gray-400">7890</p>
+          <div className="text-center">
+            <p className="text-xl font-semibold text-gray-900 dark:text-gray-100">Total Distributed $WFTM</p>
+            <p className="text-gray-500 dark:text-gray-400">987,654</p>
           </div>
-         </div>
-        
-            {/* Claim rewards section */}
-    <div className="mt-12">
-        <div className="container mx-auto p-6">
-        <div className="shadow-md rounded-lg p-6 mt-6">
-      <button className="bg-indigo-600 dark:bg-indigo-400 text-white font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-indigo-500 dark:hover:bg-indigo-300">Claim Rewards</button>
-    </div>
-
-    {/* User's NFTs section */}
-    <div className="mt-12">
-        <div className="container mx-auto p-6">
-        <div className="shadow-md rounded-lg p-6 mt-6">
-      <h2 className="text-3xl font-semibold text-gray-900 dark:text-gray-100">Your Fantom Treasure NFTs</h2>
-      <p className="mt-4 text-gray-700 dark:text-gray-300">You do not own any Fantom Treasure NFTs.</p>
-      <a href="https://link-to-nft-purchase" className="text-indigo-600 dark:text-indigo-400 hover:text-indigo-500 dark:hover:text-indigo-300">Get Your Fantom Treasure NFTs</a>
-    </div>
-
-    {/* How to get rewards section */}
-    <div className="mt-12">
-        <div className="container mx-auto p-6">
-        <div className="shadow-md rounded-lg p-6 mt-6">
-      <h2 className="text-3xl font-semibold text-gray-900 dark:text-gray-100">How to get rewards with Fantom Treasures</h2>
-      <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div className="flex flex-col items-center text-center">
-          <h3 className="text-2xl font-semibold text-gray-900 dark:text-gray-100">1. Mint NFT</h3>
-          <p className="mt-4 text-gray-700 dark:text-gray-300">Convince the user here why they should get an NFT</p>
-          <button className="mt-4 bg-indigo-600 dark:bg-indigo-400 text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:bg-indigo-500 dark:hover:bg-indigo-300">Mint now</button>
-        </div>
-        <div className="flex flex-col items-center text-center">
-          <h3 className="text-2xl font-semibold text-gray-900 dark:text-gray-100">2. Stake</h3>
-          <p className="mt-4 text-gray-700 dark:text-gray-300">Stake your NFT to earn rewards from Community Treasury on Fantom.</p>
-        </div>
-        <div className="flex flex-col items-center text-center">
-          <h3 className="text-2xl font-semibold text-gray-900 dark:text-gray-100">3. Earn</h3>
-          <p className="mt-4 text-gray-700 dark:text-gray-300">Earn rewards in $FTM.</p>
         </div>
       </div>
-     </div>
+
+      {/* Claim Rewards */}
+      <div className="bg-white dark:bg-gray-700 shadow-md rounded-lg p-6 mt-6">
+        <h2 className="text-2xl font-semibold mb-4 text-gray-900 dark:text-gray-100">Claim Rewards</h2>
+        <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded    <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
+      Claim Rewards
+    </button>
+  </div>
+
+  {/* User's NFTs */}
+  <div className="bg-white dark:bg-gray-700 shadow-md rounded-lg p-6 mt-6">
+    <h2 className="text-2xl font-semibold mb-4 text-gray-900 dark:text-gray-100">Your Fantom Treasure NFTs</h2>
+    <p className="text-gray-500 dark:text-gray-400">
+      You do not own any Fantom Treasure NFTs.
+    </p>
+    <a
+      href="https://example.com"
+      className="text-blue-500 hover:text-blue-600 underline"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Get Your Fantom Treasure NFTs
+    </a>
+  </div>
+
+  {/* How to Get Rewards */}
+  <div className="bg-white dark:bg-gray-700 shadow-md rounded-lg p-6 mt-6">
+    <h2 className="text-2xl font-semibold mb-4 text-gray-900 dark:text-gray-100">
+      How to get rewards with Fantom Treasures
+    </h2>
+    <ol className="list-decimal list-inside text-gray-500 dark:text-gray-400">
+      <li>
+        <h3 className="font-semibold">Mint NFT</h3>
+        <p>Convince the user here why they should get an NFT</p>
+        <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
+          Mint now
+        </button>
+      </li>
+      <li>
+        <h3 className="font-semibold">Stake</h3>
+        <p>Stake your NFT to earn rewards from Community Treasury on Fantom.</p>
+      </li>
+      <li>
+        <h3 className="font-semibold">Earn</h3>
+        <p>Earn rewards in $FTM.</p>
+      </li>
+    </ol>
+  </div>
+</div>
 )
 }
-          
+
 export default Dashboard
+
 
 
