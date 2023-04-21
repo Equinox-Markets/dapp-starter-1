@@ -20,7 +20,9 @@ const Dashboard: FC = () => {
           <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-gray-100">Balance</h3>
           <p className="text-gray-500 dark:text-gray-400">{balance} ETH</p>
         </div>
-              {/* Add the ThemeSwitcher component */}
+     </div>
+      
+      {/* Add the ThemeSwitcher component */}
       <div className="mt-4">
         <ThemeSwitcher />
       </div>
