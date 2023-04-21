@@ -10,25 +10,10 @@ const Dashboard: FC = () => {
   const balance = balanceData?.formatted || '0'
 
   return (
-    <div className="bg-white dark:bg-gray-800 min-h-screen">
-      <div className="container mx-auto p-6">
-        <div className="shadow-md rounded-lg p-6 mt-6">
-          <h2 className="text-2xl font-semibold mb-4 text-gray-900 dark:text-gray-100">Dashboard</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            <div className="p-4 border-2 border-gray-200 dark:border-gray-700 rounded-lg">
-              <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-gray-100">Connected Account</h3>
-              <p className="text-gray-500 dark:text-gray-400">{address || 'Not connected'}</p>
-            </div>
-            <div className="p-4 border-2 border-gray-200 dark:border-gray-700 rounded-lg">
-              <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-gray-100">Balance</h3>
-              <p className="text-gray-500 dark:text-gray-400">{balance} ETH</p>
-            </div>
-          </div>
-          
 
         {/* NFT Section */}
         <div className="mt-12 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-                <div className="container mx-auto p-6">
+        <div className="container mx-auto p-6">
         <div className="shadow-md rounded-lg p-6 mt-6">
           <div className="relative">
             <Image src="public/images/robot.png" alt="Fantom Treasures NFT" width={500} height={500} className="rounded-lg shadow-lg" />
@@ -43,7 +28,7 @@ const Dashboard: FC = () => {
 
         {/* Earn real profit section */}
         <div className="mt-12">
-                <div className="container mx-auto p-6">
+        <div className="container mx-auto p-6">
         <div className="shadow-md rounded-lg p-6 mt-6">
           <h2 className="text-3xl font-semibold text-gray-900 dark:text-gray-100">Earn real profit with Fantom Treasures</h2>
           <p className="mt-4 text-gray-700 dark:text-gray-300">Earn $WFTM from the platform&apos;s treasury with your NFT</p>
@@ -51,7 +36,7 @@ const Dashboard: FC = () => {
 
         {/* Stats section */}
         <div className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-8">
-                <div className="container mx-auto p-6">
+        <div className="container mx-auto p-6">
         <div className="shadow-md rounded-lg p-6 mt-6">
           <div className="p-6 border-2 border-gray-200 dark:border-gray-700 rounded-lg">
             <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-gray-100">Staked NFTs</h3>
@@ -69,14 +54,14 @@ const Dashboard: FC = () => {
         
             {/* Claim rewards section */}
     <div className="mt-12">
-            <div className="container mx-auto p-6">
+        <div className="container mx-auto p-6">
         <div className="shadow-md rounded-lg p-6 mt-6">
       <button className="bg-indigo-600 dark:bg-indigo-400 text-white font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-indigo-500 dark:hover:bg-indigo-300">Claim Rewards</button>
     </div>
 
     {/* User's NFTs section */}
     <div className="mt-12">
-            <div className="container mx-auto p-6">
+        <div className="container mx-auto p-6">
         <div className="shadow-md rounded-lg p-6 mt-6">
       <h2 className="text-3xl font-semibold text-gray-900 dark:text-gray-100">Your Fantom Treasure NFTs</h2>
       <p className="mt-4 text-gray-700 dark:text-gray-300">You do not own any Fantom Treasure NFTs.</p>
@@ -85,7 +70,7 @@ const Dashboard: FC = () => {
 
     {/* How to get rewards section */}
     <div className="mt-12">
-            <div className="container mx-auto p-6">
+        <div className="container mx-auto p-6">
         <div className="shadow-md rounded-lg p-6 mt-6">
       <h2 className="text-3xl font-semibold text-gray-900 dark:text-gray-100">How to get rewards with Fantom Treasures</h2>
       <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8">
