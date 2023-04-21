@@ -2,7 +2,7 @@ import { FC, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
-import { useAccount, useBalance } from 'wagmi';
+import { useAccount, useBalance, useProvider } from 'wagmi';
 import { APP_NAME } from '@/lib/consts';
 import ConnectWallet from '@/components/ConnectWallet';
 import ThemeSwitcher from '@/components/ThemeSwitcher';
@@ -17,6 +17,8 @@ const contractAddress = '';
 const Dashboard: FC = () => {
   const { address, provider } = useAccount();
   const { data: balanceData } = useBalance({ token: 'ETH' });
+  const provider = useProvider(); // Get the provider from useProvider hook
+
 
   const balance = balanceData?.formatted || '0';
 
