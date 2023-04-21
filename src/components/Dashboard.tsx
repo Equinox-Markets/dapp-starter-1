@@ -15,7 +15,7 @@ const contractAbi = [];
 const contractAddress = '';
 
 const Dashboard: FC = () => {
-  const { address, provider } = useAccount();
+  const { address } = useAccount();
   const { data: balanceData } = useBalance({ token: 'ETH' });
   const provider = useProvider(); // Get the provider from useProvider hook
 
