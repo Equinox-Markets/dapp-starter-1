@@ -64,6 +64,16 @@ const Dashboard: FC = () => {
     await tx.wait();
   };
   
+  // Execute a specific function in the smart contract for Minting an NFT
+  const handleMintNow = async () => {
+    const contract = await connectToContract();
+    if (!contract) return;
+
+    // Replace 'mint' with the name of the function you want to call
+    const tx = await contract.mint();
+    await tx.wait();
+  };
+  
   return (
     <div className="max-w-6xl mx-auto sm:px-6 lg:px-8">
       {/* NFT Showcase */}
@@ -78,7 +88,10 @@ const Dashboard: FC = () => {
               Fantom Treasures depict characters as futuristic treasure hunters, seeking out valuable digital assets in a high-tech world.
             </p>
             <div className="mt-4">
-              <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
+              <button
+                className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded"
+                onClick={handleMintNow}
+              >
                 Mint now
               </button>
             </div>
@@ -106,7 +119,7 @@ const Dashboard: FC = () => {
                 rel="noreferrer"
                 className="text-blue-500 hover:text-blue-600"
               >
-                Purchase NFTs
+                You do not own any NFTs. You can purchase them here
               </a>
             </p>
           )
