@@ -63,9 +63,8 @@ const Dashboard: FC = () => {
   {/* User's NFTs */}
   <div className="bg-white dark:bg-gray-700 shadow-md rounded-lg p-6 mt-6">
     <h2 className="text-2xl font-semibold mb-4 text-gray-900 dark:text-gray-100">Your Fantom Treasure NFTs</h2>
-    <p className="text-gray-500 dark:text-gray-400">
-      You do not own any Fantom Treasure NFTs.
-    </p>
+    <p className="text-gray-500 dark:text-gray-400 mt-2">You do not own any Fantom Treasure NFTs. Get Your Fantom Treasure NFTs <a href="https://example.com" className="text-blue-500 dark:text-blue-400 underline">&apos;here&apos;</a>.</p>
+
     <a
       href="https://example.com"
       className="text-blue-500 hover:text-blue-600 underline"
