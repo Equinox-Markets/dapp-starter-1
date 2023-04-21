@@ -34,7 +34,7 @@ const Dashboard: FC = () => {
         {/* NFT Section */}
         <div className="mt-12 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           <div className="relative">
-            <Image src="/path/to/nft-image.png" alt="Fantom Treasures NFT" width={500} height={500} className="rounded-lg shadow-lg" />
+            <Image src="/src/to/nft-image.png" alt="Fantom Treasures NFT" width={500} height={500} className="rounded-lg shadow-lg" />
           </div>
           <div>
             <h2 className="text-3xl font-semibold text-gray-900 dark:text-gray-100">Fantom Treasures</h2>
