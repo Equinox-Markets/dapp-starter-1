@@ -9,10 +9,6 @@ import Dashboard from '@/components/Dashboard'
 const Home: FC = () => {
   return (
     <div className="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
-      <div className="absolute top-6 right-6 flex">
-        <ThemeSwitcher className="mr-2" />
-        <ConnectWallet />
-      </div>
       <div className="max-w-6xl mx-auto sm:px-6 lg:px-8">
         <Dashboard />
 
