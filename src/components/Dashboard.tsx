@@ -136,11 +136,6 @@ const Dashboard: FC = () => {
       </div>
     </div>
   </div>
-);
-
+ );
+}
 export default Dashboard;
-
-
-
-
-
