@@ -1,7 +1,6 @@
 // components/Dashboard.tsx
 import { FC } from 'react'
-import { useAccount } from 'wagmi'
-import { useBalance } from 'wagmi/eth'
+import { useAccount, useBalance } from 'wagmi'
 
 const Dashboard: FC = () => {
   const { address } = useAccount()
