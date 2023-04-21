@@ -54,9 +54,10 @@ const Dashboard: FC = () => {
       {/* Claim Rewards */}
       <div className="bg-white dark:bg-gray-700 shadow-md rounded-lg p-6 mt-6">
         <h2 className="text-2xl font-semibold mb-4 text-gray-900 dark:text-gray-100">Claim Rewards</h2>
-        <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded    <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
-      Claim Rewards
-    </button>
+        <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
+         Claim Rewards
+        </button>
+
   </div>
 
   {/* User's NFTs */}
