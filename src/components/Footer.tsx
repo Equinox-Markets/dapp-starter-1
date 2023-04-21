@@ -1,9 +1,4 @@
 import React from "react";
-import { FaTwitter, FaInstagram, FaGithub } from "react-icons/fa";
-
-const Footer = () => {
-  return (
-import React from "react";
 
 const Footer = () => {
   return (
