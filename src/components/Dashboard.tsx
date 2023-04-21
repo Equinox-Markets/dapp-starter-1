@@ -26,7 +26,7 @@ const Dashboard: FC = () => {
 
       {/* Earn Profit */}
       <div className="bg-white dark:bg-gray-700 shadow-md rounded-lg p-6 mt-6">
-        <h2 className="text-2xl font-semibold mb-4 text-gray-900 dark:text-gray-100">Earn real profit with Fantom Treasures</h2>
+        <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-gray-100">Earn real profit with Fantom Treasures</h3>
         <p className="text-gray-500 dark:text-gray-400">
           Earn $WFTM from the platform's treasury with your NFT
         </p>
