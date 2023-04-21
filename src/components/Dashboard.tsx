@@ -1,4 +1,3 @@
-
 import { FC } from 'react'
 import Image from 'next/image'
 
@@ -15,8 +14,8 @@ const Dashboard: FC = () => {
 
   return (
     <div className="max-w-6xl mx-auto sm:px-6 lg:px-8">
+      {/* NFT Showcase */}
       <div className="bg-white dark:bg-gray-800 shadow-md rounded-lg p-6 mt-6">
-        {/* NFT Showcase */}
         <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12">
           <div className="w-1/2 max-w-xs">
             <Image src="/images/robot.png" alt="NFT Image" width={250} height={250} />
@@ -26,13 +25,14 @@ const Dashboard: FC = () => {
             <p className="text-gray-500 dark:text-gray-400">
               Fantom Treasures depict characters as futuristic treasure hunters, seeking out valuable digital assets in a high-tech world.
             </p>
-           <div className="mt-4">
-            <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
-              Mint now
-            </button>
-           </div>
-          <ThemeSwitcher className="absolute top-6 right-6" />
+            <div className="mt-4">
+              <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
+                Mint now
+              </button>
+            </div>
+          </div>
         </div>
+        <ThemeSwitcher className="absolute top-6 right-6" />
       </div>
 
       {/* My NFTs */}
@@ -48,8 +48,8 @@ const Dashboard: FC = () => {
         )}
       </div>
 
+      {/* Claim Rewards */}
       <div className="bg-white dark:bg-gray-700 shadow-md rounded-lg p-6 mt-6">
-        {/* Claim Rewards */}
         <div className="text-center">
           <h2 className="text-2xl font-semibold mb-4 text-gray-900 dark:text-gray-100">Claim Rewards</h2>
           <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
@@ -58,11 +58,11 @@ const Dashboard: FC = () => {
         </div>
       </div>
     </div>
-      </div>
   )
 }
 
 export default Dashboard
+
 
 
 
