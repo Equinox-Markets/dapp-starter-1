@@ -26,11 +26,11 @@ const Dashboard: FC = () => {
             <p className="text-gray-500 dark:text-gray-400">
               Fantom Treasures depict characters as futuristic treasure hunters, seeking out valuable digital assets in a high-tech world.
             </p>
-          <div className="mt-4">
+           <div className="mt-4">
             <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
               Mint now
             </button>
-          </div>
+           </div>
           <ThemeSwitcher className="absolute top-6 right-6" />
         </div>
       </div>
