@@ -57,9 +57,8 @@ const Dashboard: FC = () => {
           </button>
         </div>
       </div>
-     </div>
     </div>
-   </div>
+      </div>
   )
 }
 
