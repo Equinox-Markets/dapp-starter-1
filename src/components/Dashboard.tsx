@@ -2,7 +2,7 @@ import { FC, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
-import { useAccount, useBalance, useProvider } from 'wagmi';
+import { useAccount, useBalance, useProvider, useSigner } from 'wagmi';
 import { APP_NAME } from '@/lib/consts';
 import ConnectWallet from '@/components/ConnectWallet';
 import ThemeSwitcher from '@/components/ThemeSwitcher';
@@ -25,11 +25,12 @@ const Dashboard: FC = () => {
   const [userNFTs, setUserNFTs] = useState([]);
   const [noNFTMessage, setNoNFTMessage] = useState('');
 
+  const { data: signer, isError, isLoading } = useSigner();
+
   // Connect to the smart contract
   const connectToContract = async () => {
-    if (!provider) return;
+    if (!signer) return;
 
-    const signer = provider.getSigner();
     const contract = new ethers.Contract(contractAddress, contractAbi, signer);
 
     return contract;
