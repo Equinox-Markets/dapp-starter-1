@@ -86,11 +86,10 @@ const Dashboard: FC = () => {
           <p className="mt-4 text-gray-700 dark:text-gray-300">Earn rewards in $FTM.</p>
         </div>
       </div>
-    </div>
-  </div>
-</div>
+     </div>
 )
 }
+          
 export default Dashboard
 
 
