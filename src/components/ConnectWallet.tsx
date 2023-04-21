@@ -1,3 +1,4 @@
+// ConnectWallet.tsx
 import { FC, MouseEvent } from 'react'
 import { useAccount } from 'wagmi'
 import { ConnectKitButton } from 'connectkit'
@@ -15,18 +16,21 @@ const ConnectWallet: FC<ConnectWalletProps> = ({ show = 'always', onClick }) => 
   if ((show == 'connected' && !isConnected) || (show == 'not_connected' && isConnected)) return null
 
   return (
-    <ConnectKitButton
-      onClick={(e: MouseEvent<HTMLButtonElement>) => {
+    <div
+      onClick={(e: MouseEvent<HTMLDivElement>) => {
         // Check if onClick prop is provided before calling it
         if (onClick) {
           e.preventDefault();
           onClick();
         }
       }}
-    />
+    >
+      <ConnectKitButton />
+    </div>
   );
 };
 
 export default ConnectWallet;
+
 
 
