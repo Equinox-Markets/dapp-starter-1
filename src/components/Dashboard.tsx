@@ -1,10 +1,11 @@
 // components/Dashboard.tsx
-import { FC, useEffect, useState } from 'react'
-import { useAccount, useBalance } from 'wagmi'
+import { FC } from 'react'
+import { useAccount } from 'wagmi'
+import { useBalance } from 'wagmi/eth'
 
 const Dashboard: FC = () => {
   const { address } = useAccount()
-  const { data: balanceData } = useBalance({ address })
+  const { data: balanceData } = useBalance({ token: 'ETH' })
 
   const balance = balanceData?.formatted || '0'
 
@@ -26,4 +27,5 @@ const Dashboard: FC = () => {
 }
 
 export default Dashboard
+
 
