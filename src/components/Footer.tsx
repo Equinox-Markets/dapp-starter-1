@@ -2,7 +2,10 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 py-4">
+    <footer className="bg-black py-4">
+      <div className="flex justify-center items-center rounded-full bg-white mx-auto w-16 h-16 mb-4">
+        <img src="/images/robot.png" alt="Logo" className="h-8" />
+      </div>
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap justify-between">
           <div className="w-full md:w-auto flex items-center justify-center md:justify-start mb-4 md:mb-0">
@@ -22,13 +25,14 @@ const Footer = () => {
               <img src="/images/robot.png" alt="LinkedIn" className="h-6" />
             </a>
           </div>
-        <p className="text-center mt-4">
-          © {new Date().getFullYear()} My Website. All rights reserved.
-        </p>
+          <p className="text-center mt-4">
+            © {new Date().getFullYear()} My Website. All rights reserved.
+          </p>
+        </div>
       </div>
-     </div>
     </footer>
   );
 };
 
 export default Footer;
+
