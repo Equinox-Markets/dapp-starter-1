@@ -9,7 +9,6 @@ const Dashboard: FC = () => {
   const balance = balanceData?.formatted || '0'
 
   return (
-return (
     <div className="max-w-6xl mx-auto sm:px-6 lg:px-8">
       <div className="bg-white dark:bg-gray-800 shadow-md rounded-lg p-6 mt-6">
         {/* NFT Showcase */}
