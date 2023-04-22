@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <footer className="bg-white dark:bg-gray-700 py-4 mt-6">
-      <div className="flex justify-center items-center rounded-full bg-white mx-auto w-16 h-16 mb-4">
+      <div className="flex justify-center items-center rounded-full bg-white mx-auto w-24 h-24 mb-4 shadow-md">
         <img src="/images/robot.png" alt="Logo" className="h-8" />
       </div>
       <div className="container mx-auto px-4">
